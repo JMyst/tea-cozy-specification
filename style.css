@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+html,
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    background-color: black;
+    z-index: 1;
+}
+
+nav {
+    float: right;
+    margin-right: 10px;
+    height: 100%;
+    background-color: black;
+}
+
+nav a {
+    text-decoration: underline;
+}
+
+main {
+    position: relative;
+    top: 69px;
+}
+
+li {
+    display: inline-block;
+}
+
+section#mission-container {
+    position: relative;
+    height: 700px;
+    background: url('images/img-mission-background.webp') center / contain no-repeat scroll;
+}
+
+#mission-banner {
+    position: absolute;
+    width: 100%;
+    top: 43%;
+    bottom: 43%;
+    background-color: black;
+}
+
+#month-container {
+    width: 1000px;
+    
+}
+
+#logo {
+    float: left;
+    height: 50px;
+    margin-left: 10px;
+}
