@@ -63,7 +63,22 @@ section#mission-container {
 
 #month-container {
     width: 1000px;
-    
+    margin: 0 auto;
+}
+
+#month-container img {
+    height: 200px;
+    width: 300px;
+}
+
+#images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+figure {
+    margin: 10px 10px;
 }
 
 #logo {
