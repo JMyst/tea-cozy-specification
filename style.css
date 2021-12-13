@@ -47,7 +47,7 @@ li {
     display: inline-block;
 }
 
-section#mission-container {
+section#mission-section {
     position: relative;
     height: 700px;
     background: url('images/img-mission-background.webp') center / contain no-repeat scroll;
@@ -61,12 +61,14 @@ section#mission-container {
     background-color: black;
 }
 
-#month-container {
+#month-section {
+    position: relative;
+    top: 50px;
     width: 1000px;
     margin: 0 auto;
 }
 
-#month-container img {
+#month-section img {
     height: 200px;
     width: 300px;
 }
@@ -78,11 +80,42 @@ section#mission-container {
 }
 
 figure {
-    margin: 10px 10px;
+    margin: 10px;
 }
 
 #logo {
     float: left;
     height: 50px;
     margin-left: 10px;
+}
+
+#location-section {
+    height: 500px;
+    position: relative;
+    top: 50px;
+    margin-top: 85px;
+    background: url('images/img-locations-background.webp') center / contain no-repeat scroll;
+}
+
+#locations-heading {
+
+}
+
+#locations-container {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+}
+
+.location-item {
+    line-height: 50px;
+    width: 300px;
+    margin: 20px;
+    background-color: black;
+}
+
+footer {
+    position: relative;
+    top: 200px;
 }
