@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h6 {
     margin: 0;
 }
 
@@ -40,7 +40,7 @@ nav a {
 
 main {
     position: relative;
-    top: 69px;
+    top: 61px;
 }
 
 li {
@@ -50,7 +50,9 @@ li {
 section#mission-section {
     position: relative;
     height: 700px;
-    background: url('images/img-mission-background.webp') center / contain no-repeat scroll;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: url('images/img-mission-background.webp') center / cover no-repeat scroll;
 }
 
 #mission-banner {
@@ -62,10 +64,8 @@ section#mission-section {
 }
 
 #month-section {
-    position: relative;
-    top: 50px;
-    width: 1000px;
-    margin: 0 auto;
+    margin: 50px auto;
+    max-width: 1000px;
 }
 
 #month-section img {
@@ -87,35 +87,54 @@ figure {
     float: left;
     height: 50px;
     margin-left: 10px;
+    position: relative;
+    top: 15%;
 }
 
 #location-section {
-    height: 500px;
-    position: relative;
-    top: 50px;
-    margin-top: 85px;
-    background: url('images/img-locations-background.webp') center / contain no-repeat scroll;
+    max-width: 1200px;
+    min-height: 500px;
+    margin: 40px auto;
+    padding-top: 85px;
+    background: url('images/img-locations-background.webp') center / cover no-repeat scroll;
 }
 
-#locations-heading {
-
-}
-
-#locations-container {
-    margin-top: 15px;
+#location-container {
+    max-width: 1050px;
+    margin: 15px auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;   
+    justify-content: space-around;
+       
 }
 
 .location-item {
-    line-height: 50px;
-    width: 300px;
-    margin: 20px;
+    margin: 15px;
+    padding: 20px;
+    flex-basis: 300px;
+    height: 300px;
     background-color: black;
+    opacity: 0.8;
+}
+
+#contact {
+    height: 200px;
+    position: relative;
+    top: 61px;
+    background-color: black;
+    z-index: -1;
 }
 
 footer {
-    position: relative;
-    top: 200px;
+    float: left;
+    margin-left: 20px;
+}
+
+footer a:active,
+footer a:visited,
+footer a:hover,
+footer a:link {
+    color: seashell;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
